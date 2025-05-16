@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #78c1f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.balance {
+  background: #0095dd;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.incomeExpense {
+  display: flex;
+  justify-content: space-between;
+}
+
+.income,
+.expense {
+  flex: 1;
+  text-align: center;
+}
+
+.money {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+.plus {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.minus {
+  color: #c0293b;
+  font-weight: bold;
+}
+
+.list {
+  list-style: none;
+  max-height: 150px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.list li {
+  background: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-right: 5px solid;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border-color: #2ecc71;
+}
+
+.list li.minus {
+  border-color: #c0293b;
+}
+
+.formControl {
+  margin-bottom: 10px;
+}
+
+.formControl label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formControl input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  width: 100%;
+  background: #0095dd;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: #007bb5;
+}
+
+.delete {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+}
+
+.delete:hover {
+  color: #c0293b;
+}
